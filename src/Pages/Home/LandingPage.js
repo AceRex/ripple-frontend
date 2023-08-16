@@ -1,11 +1,12 @@
-import Header from "../Components/header";
-import Hero from "../Components/Hero";
+import Header from "../../Components/header";
+import AboutSection from "./AboutSection";
+import Hero from "./Hero";
 
-export default function Example() {
+export default function IndexPage() {
   return (
     <div className="bg-white">
       <Header />
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="pt-14 lg:px-8">
         {/* background blur gradient starts */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -22,6 +23,9 @@ export default function Example() {
         {/* background blur gradient end */}
         {/* Herosection */}
         <Hero />
+        {/* HerosectionEnds */}
+        {/* Herosection */}
+        <AboutSection />
         {/* HerosectionEnds */}
         {/* background blur gradient starts */}
         <div

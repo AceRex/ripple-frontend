@@ -1,6 +1,6 @@
-import GooglePlay from "../Assets/Images/googlePlay.png";
-import AppleIcon from "../Assets/Images/appleStor.png";
-import Desktop from "../Assets/Images/desktop.png";
+import GooglePlay from "../../Assets/Images/googlePlay.png";
+import AppleIcon from "../../Assets/Images/appleStor.png";
+import Desktop from "../../Assets/Images/desktop.png";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
@@ -24,7 +24,7 @@ export default function HeroSection() {
           <p className="mt-6 text-base font-body leading-8 text-gray-300">
             Download the Eazipay App
           </p>
-          <div className="mt-10 flex justify-start gap-x-6 lg:justify-start">
+          <div className="mt-10 flex justify-center gap-x-6 lg:justify-start ">
             <button className="rounded-md flex bg-white text-sm font-semibold text-gray-900 shadow-2xl over:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
               <img src={AppleIcon} alt="app store" />
               <div>
