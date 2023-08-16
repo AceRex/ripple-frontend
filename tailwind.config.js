@@ -6,6 +6,7 @@ module.exports = {
     colors: {
       primary: "#11453B",
       primaryLight: "#f0f7eb",
+      primaryShade: "#d9ebcd",
       dark: "#292A29",
       light: "#ffffff",
       secondary: "#EA4E4B",
@@ -21,6 +22,7 @@ module.exports = {
       body: ["AeonikRegular"],
       bodyBold: ["Aeonik"],
       bodyLight: ["AeonikLight"],
+
     },
     extend: {},
   },

@@ -1,5 +1,6 @@
 import Header from "../../Components/header";
 import AboutSection from "./AboutSection";
+import HowItWorksSection from "./HowItWorks";
 import Hero from "./Hero";
 
 export default function IndexPage() {
@@ -24,9 +25,12 @@ export default function IndexPage() {
         {/* Herosection */}
         <Hero />
         {/* HerosectionEnds */}
-        {/* Herosection */}
+        {/* Aboutsection */}
         <AboutSection />
-        {/* HerosectionEnds */}
+        {/* AboutsectionEnds */}
+        {/* Aboutsection */}
+        <HowItWorksSection />
+        {/* AboutsectionEnds */}
         {/* background blur gradient starts */}
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
