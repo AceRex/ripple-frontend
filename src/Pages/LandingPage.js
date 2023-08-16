@@ -1,10 +1,12 @@
 import Header from "../Components/header";
+import Hero from "../Components/Hero";
 
 export default function Example() {
   return (
     <div className="bg-white">
       <Header />
       <div className="relative isolate px-6 pt-14 lg:px-8">
+        {/* background blur gradient starts */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -17,7 +19,11 @@ export default function Example() {
             }}
           />
         </div>
-
+        {/* background blur gradient end */}
+        {/* Herosection */}
+        <Hero />
+        {/* HerosectionEnds */}
+        {/* background blur gradient starts */}
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"
@@ -30,6 +36,7 @@ export default function Example() {
             }}
           />
         </div>
+        {/* background blur gradient ends */}
       </div>
     </div>
   );

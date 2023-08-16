@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav
-        className="flex w-4/5 m-auto grid grid-cols-3 gap-4 items-center justify-between p-6 lg:px-8"
+        className="flex w-[100%] sm:w-4/5 m-auto grid grid-cols-3 sm:gap-4 gap-52 items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1 col-span-2 items-center">
@@ -38,19 +38,19 @@ export default function Header() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-end justify-end text-dark"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="h-6 w-6 " aria-hidden="true" />
           </button>
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end font-body grid grid-cols-3 gap-4">
-          <button className="rounded-full bg-none border border-primary w-1/2 text-primary p-3">
+          <button className="rounded-full bg-none border border-primary w-4/5 text-primary p-3 py-2">
             Login
           </button>
-          <button className="rounded-full bg-primary text-light w-1/2 p-3">
+          <button className="rounded-full bg-primary text-light w-4/5 p-3 py-2">
             Register
           </button>
         </div>
