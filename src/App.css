@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Aeonik;
+    src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Bold.otf");
+}
+@font-face {
+    font-family: AeonikLight;
+    src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Light.otf");
+}
+@font-face {
+    font-family: AeonikRegular;
+    src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Regular.otf");
+}
+@font-face {
+    font-family: MadeMellowBlack;
+    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Black.otf");
+}
+@font-face {
+    font-family: MadeMellowBold;
+    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Bold.otf");
+}
+@font-face {
+    font-family: MadeMellowLight;
+    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Light.otf");
+}
+@font-face {
+    font-family: MadeMellowMedium;
+    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Medium.otf");
+}
+@font-face {
+    font-family: MadeMellowRegular;
+    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Regular.otf");
+}
+@font-face {
+    font-family: MadeMellowSemibold;
+    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-SemiBold.otf");
+}
