@@ -116,8 +116,8 @@ export default function HowItWorks() {
               <p
                 className={
                   currentView === "view1"
-                    ? "bg-primary p-3 w-20 rounded-md text-center text-light font-bodyBold text-3xl mb-3"
-                    : "bg-light p-5 w-20 rounded-md text-center bg-light text-dark font-bodyBold text-3xl mb-3"
+                    ? "bg-primary p-3 w-20 col-span-1 rounded-md text-center text-light font-bodyBold text-3xl mb-3"
+                    : "bg-light p-5 w-20 col-span-1 rounded-md text-center bg-light text-dark font-bodyBold text-3xl mb-3"
                 }
                 onClick={() => setCurrentView("view1")}
               >
