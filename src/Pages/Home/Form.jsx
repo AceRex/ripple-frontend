@@ -5,13 +5,13 @@ export default function DemoForm() {
   const [currentView, setCurrentView] = useState("individual");
   
   return (
-    <section className="relative -mx-8 py-64 max-[680px]:px-20 min-[768px]:px-40 -pb-36">
+    <section className="relative max-[680px]:px-10 -mx-8 py-64 max-[680px]:px-20 min-[768px]:px-40 -pb-36">
       <div className="max-[680px]:block min-[768px]:flex min-[768px]:flex-row min-[768px]:px-30 min-[1536px]:px-32">
         <div className=" basis-1/2">
-          <h2 className="font-headingMd max-[680px]:text-5xl max-[680px]:text-center min-[768px]:text-5xl min-[1536px]:text-6xl text-primary mb-4">
+          <h2 className="font-headingMd max-[680px]:text-4xl max-[680px]:text-center min-[768px]:text-5xl min-[1536px]:text-6xl text-primary max-[680px]:mb-1 mb-4">
             Get an Exclusive
           </h2>
-          <h2 className="font-headingMd max-[680px]:text-5xl max-[680px]:text-center min-[768px]:text-5xl min-[1536px]:text-6xl text-primary mb-4">
+          <h2 className="font-headingMd max-[680px]:text-4xl max-[680px]:text-center min-[768px]:text-5xl min-[1536px]:text-6xl text-primary mb-4">
             Demo of Eazipay
           </h2>
           <p className="font-body max-[680px]:text-center min-[768px]:text-lg min-[1536px]:text-xl w-[90%] max-[680px]:w-[100%]">

@@ -6,7 +6,7 @@ import Techn from "../../Assets/Images/techn.png";
 export default function FreeForeverSection() {
   return (
     <section className="bg-secondaryLight -mx-8">
-      <div className="w-[70%] mx-auto relative">
+      <div className="w-[70%] max-[680px]:w-[90%] mx-auto relative">
         <div className="absolute">
           <img src={DOTS} alt="dots" />
         </div>
@@ -19,15 +19,15 @@ export default function FreeForeverSection() {
                 Subscribe to the Eazilife today
               </p>
             </h2>
-            <h2 className="font-headingMd text-center min-[768px]:hidden text-5xl w-[80%] m-auto text-dark">
+            <h2 className="font-headingMd text-center min-[768px]:hidden max-[680px]:w-[90%] max-[680px]:text-4xl text-5xl w-[80%] m-auto text-dark">
               Free forever for your{" "}
               <span className="text-secondary">salary payment</span>
               <p className="font-body mt-8 text-xl">
                 Subscribe to the Eazilife today
               </p>
             </h2>
-            <div className="mt-10 flex justify-center gap-x-4 lg:justify-start ">
-              <button className="rounded-md flex bg-light p-2 px-4 text-sm font-semibold text-gray-900 shadow-2xl over:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            <div className="mt-10 flex max-[680px]:gap-x-2 justify-center gap-x-4 lg:justify-start ">
+              <button className="rounded-md flex bg-light p-2 max-[680px]:px-2 px-4 text-sm font-semibold text-gray-900 shadow-2xl over:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                 <img src={AppleIcon} alt="app store" />
                 <div>
                   <p className="font-bodyLight">Download on the</p>

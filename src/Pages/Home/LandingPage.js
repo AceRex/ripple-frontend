@@ -3,13 +3,14 @@ import AboutSection from "./AboutSection";
 import HowItWorksSection from "./HowItWorks";
 import FreeForeverSection from "./FreeForeverSection";
 import DemoForm from "./Form";
+import Footer from "./Footer";
 import Hero from "./Hero";
 
 export default function IndexPage() {
   return (
     <div className="bg-white">
       <Header />
-      <div className="pt-14 lg:px-8">
+      <div className="pt-14 lg:px-8 max-[680px]:px-8">
         {/* background blur gradient starts */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -44,6 +45,7 @@ export default function IndexPage() {
         </div>
         {/* background blur gradient ends */}
       </div>
+      <Footer />
     </div>
   );
 }
