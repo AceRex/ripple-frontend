@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
-import { BsFillGridFill, BsBook, BsTelephone } from "react-icons/bs";
+import {
+  BsFillGridFill,
+  BsBook,
+  BsTelephone,
+  BsChevronDown,
+} from "react-icons/bs";
 import { BiWallet, BiUserPlus } from "react-icons/bi";
 import { PiNote } from "react-icons/pi";
 import { HiOutlineSquare2Stack } from "react-icons/hi2";
@@ -25,30 +30,55 @@ const NavLinks = [
     Icon: BiUserPlus,
     name: "employee-management",
     title: "Employee Management",
+    children: [
+      {
+        link: "/dashboard/employee_management",
+        name: "employee-management",
+        title: "Employee Management",
+      },
+    ],
   },
   {
     link: "/dashboard/payroll",
     Icon: PiNote,
     name: "payroll",
     title: "Payroll",
+    children: [
+        {
+            link: "/dashboard/payroll",
+            name: "payroll",
+            title: "Payroll",
+        },
+      ],
   },
   {
     link: "/dashboard/compliance",
     Icon: HiOutlineSquare2Stack,
     name: "compliance",
     title: "Compliance",
+    children: [{   link: "/dashboard/compliance",
+    name: "compliance",
+    title: "Compliance",}]
   },
   {
     link: "/dashboard/quick_loan",
     Icon: RiHandCoinLine,
     name: "quick-loan",
     title: "Quick Loan",
+    children: [{   link: "/dashboard/quick_loan",
+    name: "quick-loan",
+    title: "Quick Loan",}]
   },
   {
     link: "/dashboard/book_keeping",
     Icon: BsBook,
     name: "book-keeping",
     title: "Book Keeping",
+    children:[{
+        link: "/dashboard/book_keeping",
+        name: "book-keeping",
+        title: "Book Keeping",
+    }]
   },
 ];
 
@@ -69,23 +99,26 @@ const OtherLinks = [
 
 export default function Links() {
   const [active, setActive] = useState("/dashboard/");
-  
+
   return (
     <div className="relative">
       <ul className="mt-2 px-[0.5px]">
-        {NavLinks.map(({ Icon, name, title, link }) => (
+        {NavLinks.map(({ Icon, name, title, link, children }) => (
           <Link
             to={link}
             key={name}
             className={
               active === name
-                ? "flex items-center px-6 mb-2 text-primary py-3 border-l-4 border-primary "
-                : "flex items-center px-6 mb-2 py-3 text-dark"
+                ? "flex items-center justify-between px-6 mb-2 text-primary py-3 border-l-4 border-primary "
+                : "flex items-center justify-between px-6 mb-2 py-3 text-dark"
             }
             onClick={(e) => setActive(name)}
           >
-            <Icon className="text-xl mr-3" />
-            <p className="font-body text-[15px]">{title}</p>
+            <div className="flex items-center">
+              <Icon className="text-xl mr-3" />
+              <p className="font-body text-[15px]">{title}</p>
+            </div>
+            {children ? <BsChevronDown className="text-md mL-3" /> : null}
           </Link>
         ))}
       </ul>
