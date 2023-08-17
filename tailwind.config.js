@@ -10,6 +10,7 @@ module.exports = {
       dark: "#292A29",
       light: "#ffffff",
       secondary: "#EA4E4B",
+      secondaryLight: "#ffe9e7",
       invert: "#B4A572",
     },
     fontFamily: {
