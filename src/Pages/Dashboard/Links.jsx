@@ -26,7 +26,6 @@ const NavLinks = [
     title: "Wallet",
   },
   {
-    link: "/dashboard/employee_management",
     Icon: BiUserPlus,
     name: "employee-management",
     title: "Employee Management",
@@ -39,58 +38,64 @@ const NavLinks = [
     ],
   },
   {
-    link: "/dashboard/payroll",
     Icon: PiNote,
     name: "payroll",
     title: "Payroll",
     children: [
-        {
-            link: "/dashboard/payroll",
-            name: "payroll",
-            title: "Payroll",
-        },
-      ],
+      {
+        link: "/dashboard/payroll",
+        name: "payroll",
+        title: "Payroll",
+      },
+    ],
   },
   {
-    link: "/dashboard/compliance",
     Icon: HiOutlineSquare2Stack,
     name: "compliance",
     title: "Compliance",
-    children: [{   link: "/dashboard/compliance",
-    name: "compliance",
-    title: "Compliance",}]
+    children: [
+      {
+        link: "/dashboard/compliance",
+        name: "compliance",
+        title: "Compliance",
+      },
+    ],
   },
   {
-    link: "/dashboard/quick_loan",
     Icon: RiHandCoinLine,
     name: "quick-loan",
     title: "Quick Loan",
-    children: [{   link: "/dashboard/quick_loan",
-    name: "quick-loan",
-    title: "Quick Loan",}]
+    children: [
+      {
+        link: "/dashboard/quick_loan",
+        name: "quick-loan",
+        title: "Quick Loan",
+      },
+    ],
   },
   {
-    link: "/dashboard/book_keeping",
     Icon: BsBook,
     name: "book-keeping",
     title: "Book Keeping",
-    children:[{
+    children: [
+      {
         link: "/dashboard/book_keeping",
         name: "book-keeping",
         title: "Book Keeping",
-    }]
+      },
+    ],
   },
 ];
 
 const OtherLinks = [
   {
-    link: "/dashboard/s",
+    link: "#",
     Icon: BsTelephone,
     name: "support",
     title: "Support",
   },
   {
-    link: "/dashboard/s",
+    link: "#",
     Icon: AiOutlineSetting,
     name: "Settings",
     title: "Settings",
@@ -99,30 +104,48 @@ const OtherLinks = [
 
 export default function Links() {
   const [active, setActive] = useState("/dashboard/");
+  const [visible, setVisible] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative w-[100%]">
       <ul className="mt-2 px-[0.5px]">
         {NavLinks.map(({ Icon, name, title, link, children }) => (
-          <Link
-            to={link}
-            key={name}
-            className={
-              active === name
-                ? "flex items-center justify-between px-6 mb-2 text-primary py-3 border-l-4 border-primary "
-                : "flex items-center justify-between px-6 mb-2 py-3 text-dark"
-            }
-            onClick={(e) => setActive(name)}
-          >
-            <div className="flex items-center">
-              <Icon className="text-xl mr-3" />
-              <p className="font-body text-[15px]">{title}</p>
-            </div>
-            {children ? <BsChevronDown className="text-md mL-3" /> : null}
-          </Link>
+          <div>
+            <Link
+              to={link}
+              key={name}
+              className={
+                active === name
+                  ? "flex items-center justify-between px-6 mb-4 text-primary py-3 border-l-4 border-primary "
+                  : "flex items-center justify-between px-6 mb-4 py-3 text-dark"
+              }
+              onClick={(e) => (setActive(name), setVisible(!visible))}
+            >
+              <div className="flex items-center">
+                <Icon className="text-xl mr-3" />
+                <p className="font-body text-[15px]">{title}</p>
+              </div>
+              {children ? <BsChevronDown className="text-md" /> : null}
+            </Link>
+            {children ? (
+              <div
+                className={
+                  active === name && visible === true
+                    ? "bg-[#dfdfdf] w-[100%] min-[768px]:px-10 min-[1536px]:px-16 p-4 -mt-4"
+                    : "hidden"
+                }
+              >
+                {children.map(({link, name, title}) => (
+                  <Link key={name} to={link}>
+                    {title}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+          </div>
         ))}
       </ul>
-      <ul className="absolute -bottom-[8.5rem]">
+      <ul className="absolute min-[768px]:-bottom-[8.5rem] min-[1536px]:-bottom-[13rem]">
         {OtherLinks.map(({ Icon, name, title, link }) => (
           <Link
             to={link}
