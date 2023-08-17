@@ -7,8 +7,8 @@ import EmployeeManagement from "./Pages/Dashboard/Pages/EmployeeManagement";
 import BookKeeping from "./Pages/Dashboard/Pages/BookKeeping";
 import QuickLoan from "./Pages/Dashboard/Pages/QuickLoan";
 import Compliance from "./Pages/Dashboard/Pages/Complaince";
-
 import { createBrowserRouter } from "react-router-dom";
+import Index from "./Pages/Dashboard/Pages";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +19,10 @@ export const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />,
     children: [
+      {
+        path: "index",
+        element: <Index />,
+      },
       {
         path: "wallet",
         element: <Wallet />,

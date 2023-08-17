@@ -1,8 +1,14 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import SideNav from "./sideNav";
 import NavBar from "./Navbar";
+import { useEffect } from "react";
 
 export default function Dashboard() {
+  let navigate = useNavigate();
+  useEffect(() => {
+    navigate("dashboard/index");
+  },[navigate]);
+
   return (
     <div className="flex flex-row">
       <aside className="w-[20%]">
