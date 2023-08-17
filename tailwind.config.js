@@ -25,7 +25,12 @@ module.exports = {
       bodyLight: ["AeonikLight"],
 
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        curves: "url('./src/Assets/Images/vector (2).png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
+    },
   },
   plugins: [],
 };

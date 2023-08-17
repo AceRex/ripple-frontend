@@ -1,28 +1,48 @@
 import * as ReactDOM from "react-dom/client";
 import LandingPageHome from "./Pages/Home/LandingPage";
 import Dashboard from "./Pages/Dashboard";
+import Wallet from "./Pages/Dashboard/Pages/Wallet";
+import Payroll from "./Pages/Dashboard/Pages/Payroll";
+import EmployeeManagement from "./Pages/Dashboard/Pages/EmployeeManagement";
+import BookKeeping from "./Pages/Dashboard/Pages/BookKeeping";
+import QuickLoan from "./Pages/Dashboard/Pages/QuickLoan";
+import Compliance from "./Pages/Dashboard/Pages/Complaince";
 
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <LandingPageHome />,
-    },
-    {
-      path: "/dashboard",
-      element: <Dashboard />,
-      children: [
-        {
-          path: "s/",
-          element: <h1>Hello</h1>,
-        },
-        {
-          path: "f/",
-          element: <h1>Hello2</h1>,
-        },
-      ],
-    },
-  ]);
+  {
+    path: "/",
+    element: <LandingPageHome />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
+      {
+        path: "wallet",
+        element: <Wallet />,
+      },
+      {
+        path: "employee_management",
+        element: <EmployeeManagement />,
+      },
+      {
+        path: "payroll",
+        element: <Payroll />,
+      },
+      {
+        path: "compliance",
+        element: <Compliance />,
+      },
+      {
+        path: "quick_loan",
+        element: <QuickLoan />,
+      },
+      {
+        path: "book_keeping",
+        element: <BookKeeping />,
+      },
+    ],
+  },
+]);

@@ -39,3 +39,12 @@
     src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-SemiBold.otf");
 }
 
+.background-image-blend{
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    width: 100%;
+    background-color: #11453B;
+    background-image: url('./Assets/Images/curve.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

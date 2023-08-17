@@ -5,7 +5,7 @@ import { BsChevronRight } from "react-icons/bs";
 
 export default function NavBar() {
   return (
-    <nav className="flex p-2 items-center justify-between px-14 border-y border-[#dfdfdf]">
+    <nav className="flex p-2 items-center justify-between px-20 border-y border-[#dfdfdf]">
       <img src={UserLogo} alt="user-Logo" />
       <div className=" flex justify-between items-center min-[1536px]:w-[20%]  ">
         <div className="relative mr-5">

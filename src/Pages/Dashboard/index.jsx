@@ -4,11 +4,11 @@ import NavBar from "./Navbar";
 
 export default function Dashboard() {
   return (
-    <div className="grid grid-cols-10 grid-flow-row gap4">
-      <aside className="col-span-2">
+    <div className="flex flex-row">
+      <aside className="w-[20%]">
         <SideNav />
       </aside>
-      <section className="col-span-8">
+      <section className="w-[80%]">
         <NavBar />
         <Outlet />
       </section>
