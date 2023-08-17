@@ -3,48 +3,57 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Aeonik;
-    src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Bold.otf");
+  font-family: Aeonik;
+  src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Bold.otf");
 }
 @font-face {
-    font-family: AeonikLight;
-    src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Light.otf");
+  font-family: AeonikLight;
+  src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Light.otf");
 }
 @font-face {
-    font-family: AeonikRegular;
-    src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Regular.otf");
+  font-family: AeonikRegular;
+  src: url("./Assets/Fonts/Aeonik/AeonikTRIAL-Regular.otf");
 }
 @font-face {
-    font-family: MadeMellowBlack;
-    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Black.otf");
+  font-family: MadeMellowBlack;
+  src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Black.otf");
 }
 @font-face {
-    font-family: MadeMellowBold;
-    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Bold.otf");
+  font-family: MadeMellowBold;
+  src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Bold.otf");
 }
 @font-face {
-    font-family: MadeMellowLight;
-    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Light.otf");
+  font-family: MadeMellowLight;
+  src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Light.otf");
 }
 @font-face {
-    font-family: MadeMellowMedium;
-    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Medium.otf");
+  font-family: MadeMellowMedium;
+  src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Medium.otf");
 }
 @font-face {
-    font-family: MadeMellowRegular;
-    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Regular.otf");
+  font-family: MadeMellowRegular;
+  src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-Regular.otf");
 }
 @font-face {
-    font-family: MadeMellowSemibold;
-    src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-SemiBold.otf");
+  font-family: MadeMellowSemibold;
+  src: url("./Assets/Fonts/MadeMellow/MADEMellowPERSONALUSE-SemiBold.otf");
 }
 
-.background-image-blend{
-    padding-block: 2rem;
-    padding-inline: 2rem;
-    width: 100%;
-    background-color: #11453B;
-    background-image: url('./Assets/Images/curve.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.background-image-blend {
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  width: 100%;
+  background-color: #11453b;
+  background-image: url("./Assets/Images/curve.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-img {
+  width: 100%;
+  background-color: #11453b;
+  background-image: url("./Assets/Images/bg-somthing.png");
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: 50% 90%;
 }

@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 
 const NavLinks = [
   {
-    link: "/dashboard",
+    link: "/dashboard/index",
     Icon: BsFillGridFill,
     name: "dashboard",
     title: "Dashboard",
