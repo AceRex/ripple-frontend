@@ -8,7 +8,7 @@ import {
 import { BiWallet, BiUserPlus } from "react-icons/bi";
 import { PiNote } from "react-icons/pi";
 import { HiOutlineSquare2Stack } from "react-icons/hi2";
-import { RiHandCoinLine } from "react-icons/ri";
+import { FaHandHoldingDollar } from "react-icons/fa6";
 import { AiOutlineSetting } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
@@ -62,7 +62,7 @@ const NavLinks = [
     ],
   },
   {
-    Icon: RiHandCoinLine,
+    Icon: FaHandHoldingDollar,
     name: "quick-loan",
     title: "Quick Loan",
     children: [

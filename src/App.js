@@ -8,7 +8,7 @@ import BookKeeping from "./Pages/Dashboard/Pages/BookKeeping";
 import QuickLoan from "./Pages/Dashboard/Pages/QuickLoan";
 import Compliance from "./Pages/Dashboard/Pages/Complaince";
 import { createBrowserRouter } from "react-router-dom";
-import Index from "./Pages/Dashboard/Pages";
+import Index from "./Pages/Dashboard/Pages/Index";
 
 export const router = createBrowserRouter([
   {
