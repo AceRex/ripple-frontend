@@ -1,11 +1,18 @@
-import Home from './Pages/Home/LandingPage'
+import * as ReactDOM from "react-dom/client";
+import LandingPageHome from "./Pages/Home/LandingPage";
+import Dashboard from "./Pages/Dashboard";
 
-function App() {
-  return (
-    <div className="App">
-      <Home />
-    </div>
-  );
-}
+import {
+  createBrowserRouter,
+} from "react-router-dom";
 
-export default App;
+export const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <LandingPageHome />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
+    },
+  ]);
