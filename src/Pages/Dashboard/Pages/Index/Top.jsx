@@ -23,13 +23,14 @@ export default function Top(){
               <p className="text-light font-bodyBold text-4xl flex">
                 {visible ? (
                   <>
-                    <span className="mr-3">N12,560,078.00 </span>{" "}
-                    <BsEye onClick={(e) => setVisible(!visible)} />
+                    <span className="mr-3">N**,**.** </span>
+                    <BsEyeSlash onClick={(e) => setVisible(!visible)} className="hover:cursor-pointer" />
                   </>
+                  
                 ) : (
                   <>
-                    <span className="mr-3">N**,**.** </span>
-                    <BsEyeSlash onClick={(e) => setVisible(!visible)} />
+                    <span className="mr-3">N12,560,078.00 </span>{" "}
+                    <BsEye onClick={(e) => setVisible(!visible)} className="hover:cursor-pointer" />
                   </>
                 )}{" "}
               </p>
