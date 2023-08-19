@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Dashboard() {
   let navigate = useNavigate();
   useEffect(() => {
-    navigate("dashboard/index");
+    navigate("index");
   },[navigate]);
 
   return (
