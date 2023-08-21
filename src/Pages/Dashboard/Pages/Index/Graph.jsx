@@ -20,11 +20,11 @@ ChartJs.register(
 
 export default function Graph() {
   const data = {
-    labels: ["Mon", "Tue", "Wed"],
+    labels: ["Q1", "Q2", "Q3"],
     datasets: [
       {
         label: "2020",
-        data: [6, 3, 4],
+        data: [20000, 300000, 6000000],
         backgroundCOlor: "red",
         borderColor: "aqua",
         pointBorderColor: "red",
@@ -32,7 +32,7 @@ export default function Graph() {
       },
       {
         label: "2021",
-        data: [1, 4, 0],
+        data: [10000, 7000000, 3000000],
         backgroundCOlor: "green",
         borderColor: "red",
         pointBorderColor: "green",
@@ -47,8 +47,8 @@ export default function Graph() {
     },
     scales: {
       y: {
-        min: 0,
-        max: 10,
+        min: 10000,
+        max: 10000000,
       },
     },
   };
